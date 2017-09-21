@@ -1,5 +1,5 @@
 **Alumno: Carlos Toledano Delgado**
-**Ejercicios tema 1: Introducción a la infraestructura virtual: concepto y soporte físico**
+#**Ejercicios tema 1: Introducción a la infraestructura virtual: concepto y soporte físico**
 
 
 #**EJERCICIO 1**
