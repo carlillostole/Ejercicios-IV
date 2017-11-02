@@ -6,11 +6,11 @@ Ya realizado como parte del despliegue del proyecto que se está desarrollando p
 
 **EJERCICIO 2: Crear una aplicación en OpenShift o en algún otro PaaS en el que se haya dado uno de alta. Realizar un despliegue de prueba usando alguno de los ejemplos incluidos con el PaaS.**
 También realizado.
-![1](https://github.com/carlillostole/Ejercicios-IV/tree/master/TEMA3/Pagina%20web%20IV%20TEMA3)
+![Enlace aplicación web](https://github.com/carlillostole/Ejercicios-IV/tree/master/TEMA3/Pagina%20web%20IV%20TEMA3)
 
 **EJERCICIO 3: Realizar una app en express (o el lenguaje y marco elegido) que incluya variables como en el caso anterior.**
 He creado una pagina web básica con Django, incluye funcionalidades como login/registro de usuarios, etc...
-![1](https://github.com/carlillostole/Ejercicios-IV/tree/master/TEMA3/Pagina%20web%20IV%20TEMA3)
+![Enlace aplicación web](https://github.com/carlillostole/Ejercicios-IV/tree/master/TEMA3/Pagina%20web%20IV%20TEMA3)
 
 
 ![1](https://github.com/carlillostole/Ejercicios-IV/blob/master/TEMA3/capturas/1.PNG?raw=true)
