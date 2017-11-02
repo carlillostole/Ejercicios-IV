@@ -9,9 +9,13 @@ También realizado.
 
 **EJERCICIO 3: Realizar una app en express (o el lenguaje y marco elegido) que incluya variables como en el caso anterior.**
 He creado una pagina web básica con Django, incluye funcionalidades como login/registro de usuarios, etc...
-![1]()
-![2]()
-![3]()
+
+![1](https://github.com/carlillostole/Ejercicios-IV/blob/master/TEMA3/capturas/1.PNG?raw=true)
+
+![2](https://github.com/carlillostole/Ejercicios-IV/blob/master/TEMA3/capturas/2.png?raw=true)
+
+![3](https://github.com/carlillostole/Ejercicios-IV/blob/master/TEMA3/capturas/3.png?raw=true)
+
 **EJERCICIO 4: Crear pruebas para las diferentes rutas de la aplicación**
 Test creados y pasados correctamente.
 
