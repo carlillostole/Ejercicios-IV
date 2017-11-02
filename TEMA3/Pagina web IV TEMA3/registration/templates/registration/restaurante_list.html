@@ -1,0 +1,106 @@
+{% load staticfiles %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>IV</title>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="jquery.color.min.js"></script>
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    <!-- Custom styles for this template -->
+
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+  </head>
+
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link" href="/principal">Inicio</a>
+				  <a class="nav-link" href="/perfil">Perfil</a>
+          <a class="nav-link" href="/restaurante/add/">Registrar restaurante</a>
+          <a class="nav-link active" href="/restaurante/list/">Lista de restaurantes</a>
+          <a class="nav-link" href="/contacto">Contacto</a>
+          <a class="nav-link" href="/mapa">Mapa</a>
+          <a class="nav-link" href="/accounts/logout/">Logout</a>
+
+
+        </nav>
+      </div>
+    </div>
+
+		<div class="blog-header">
+      <div class="container">
+        <h1 class="blog-title">IV 17-18: Infraestructura Virtual</h1>
+        <p class="lead blog-description">Perfil usuario: {{ user.username }}</p>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+
+            <h2 class="blog-post-title">Lista de restaurantes</h2>
+            <p class="blog-post-meta">
+							<div class="row">
+									<div class="col-md-4 col-md-offset-4">
+
+
+                        <em>Restaurante - Ciudad</em>
+                          <ul>
+                                  {% for restaurante in object_list %}
+                                  <li>{{ restaurante.nombre }} - {{ restaurante.ciudad }} </li>
+                                  {% endfor %}
+                          </ul>
+
+
+                          Haga click <a href="{% url 'restaurantes:radd'  %}">aquí</a> para añadir un restaurante.
+
+											<br>
+									</div>
+							</div>
+          </div><!-- /.blog-post -->
+
+
+
+
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>Copyright &#169; 2018. Carlos Toledano Delgado: Company name all rights reserved</p>
+      <p>
+        <a href="perfil.html">Back to top</a>
+      </p>
+    </footer>
+
+
+  </body>
+
+
+</html>
