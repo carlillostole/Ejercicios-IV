@@ -8,8 +8,8 @@ sudo apt install lxc1
 ```
 Y nos queda lo siguiente:
 
-![1](1)
-![2](2)
+![1](https://github.com/carlillostole/Ejercicios-IV/blob/master/TEMA4/capturas/1.png?raw=true)
+![2](https://github.com/carlillostole/Ejercicios-IV/blob/master/TEMA4/capturas/2.png?raw=true)
 
 **EJERCICIO 2: Crear y ejecutar un contenedor basado en tu distribución y otro basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya.**
 
@@ -72,7 +72,7 @@ Faltaría añadir el repositorio a nuestra lista apt y actualizar los repositori
 sh -c "echo deb https://get.docker.com/ubuntu docker main\/etc/apt/sources.list.d/docker.list"
 ```
 Vemos que se ha instalado correctamente:
-![3](docker)
+![3](https://github.com/carlillostole/Ejercicios-IV/blob/master/TEMA4/capturas/docker.png?raw=true)
 
 **EJERCICIO 4:
 1.Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.**
@@ -80,7 +80,7 @@ Para instalar una imagen de Ubuntu usamos:
 ```
 sudo docker pull ubuntu
 ```
-![3](dockerubu)
+![3](https://github.com/carlillostole/Ejercicios-IV/blob/master/TEMA4/capturas/dockerubu.png?raw=true)
 
 Comprobamos que se ha instalado correctamente con la orden:
 
@@ -88,7 +88,7 @@ Comprobamos que se ha instalado correctamente con la orden:
 sudo docker run ubuntu ls
 ```
 
-![3](dockerinstacorre)
+![3](https://github.com/carlillostole/Ejercicios-IV/blob/master/TEMA4/capturas/dockerinstacorre.png?raw=true)
 
 Para instalar CentOs es exactamente igual que lo que acabo de explicar, pero cambiando ubuntu por centos. Sería de la siguiente manera:
 ```
@@ -113,7 +113,7 @@ sudo docker run mongo ls
 
 Vemos ahora las imágenes que tenemos instaladas y que está todo correcto:
 
-![3](imagesdoc)
+![3](https://github.com/carlillostole/Ejercicios-IV/blob/master/TEMA4/capturas/imagesdoc.png?raw=true)
 
 **EJERCICIO 5: Crear un usuario propio e instalar alguna aplicación tal como nginx en el contenedor creado de esta forma, usando las órdenes propias del sistema operativo con el que se haya inicializado el contenedor.**
 
@@ -147,17 +147,17 @@ Primero debemos localizar el id del contenedor. Para ello podemos usar la orden
 ```
 sudo docker ps -a
 ```
-![3](dockerps)
+![3](https://github.com/carlillostole/Ejercicios-IV/blob/master/TEMA4/capturas/dockerps.png?raw=true)
 
 Una vez que ya sabemos el id, podremos realizar el commit con la orden:
 ```
 sudo docker commit cff54f041483 docker-commit
 ```
-![3](commit)
+![3](https://github.com/carlillostole/Ejercicios-IV/blob/master/TEMA4/capturas/commit.png?raw=true)
 
 Ahora comprobamos que se ha creado la imagen correctamente:
 
-![3](commitsize)
+![3](https://github.com/carlillostole/Ejercicios-IV/blob/master/TEMA4/capturas/commitsize.png?raw=true)
 
 **EJERCICIO 7: Crear un Dockerfile para el servicio web que se ha venido desarrollando en el proyecto de la asignatura.**
 
